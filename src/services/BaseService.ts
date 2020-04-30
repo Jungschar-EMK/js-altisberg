@@ -3,7 +3,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 export const JSON_WEB_TOKEN = 'JsonWebToken';
 
 export default class BaseServie {
-    protected BASE_URL: string = 'http://localhost:5000/v0.0.1/';
+    protected BASE_URL: string | undefined = process.env.VUE_APP_BASE_URL;
 
     protected deleteConfig: AxiosRequestConfig;
     protected getConfig: AxiosRequestConfig;

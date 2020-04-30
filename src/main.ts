@@ -7,6 +7,9 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 new Vue({
     router,
     store,

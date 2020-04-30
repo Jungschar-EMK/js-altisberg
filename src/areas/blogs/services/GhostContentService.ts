@@ -82,9 +82,4 @@ export default class GhostContentService implements IGhostContentService {
     }
 }
 
-// export const ghostContentService = new GhostContentService(
-//     process.env.GHOST_CONTENT_API_KEY,
-//     process.env.GHOST_CONTENT_API_URL
-// );
-
-export const ghostContentService = new GhostContentService('316d65d9e2a5fe24cc0fdd3911', 'http://burkhalter.internet-box.ch');
+export const ghostContentService = new GhostContentService(process.env.VUE_APP_GHOST_CONTENT_API_KEY, process.env.VUE_APP_GHOST_CONTENT_API_URL);

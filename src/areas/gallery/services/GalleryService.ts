@@ -14,5 +14,4 @@ export default class GalleryService extends BaseService implements IGalleryServi
     }
 }
 
-// export const galleryService = new GalleryService(process.env.GALLERY_URL);
-export const galleryService = new GalleryService('http://burkhalter.internet-box.ch:31901');
+export const galleryService = new GalleryService(process.env.VUE_APP_GALLERY_URL);
